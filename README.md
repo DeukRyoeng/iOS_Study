@@ -16,11 +16,11 @@
 ![스크린샷 2024-03-26 오전 4 52 44](https://github.com/DeukRyoeng/iOS_Study/assets/164954344/9a8b894e-5dff-406d-9900-6bc61e170de4)
 
 ## 구현
+![스크린샷 2024-03-26 오전 4 56 45](https://github.com/DeukRyoeng/iOS_Study/assets/164954344/0943b99f-2bd3-423f-bb8b-2d5a822835df)
 
 - URLSession을 사용하여 가져온 Json Data 와 구조체를 매핑하기 위에 Codable프로토콜 사용하겠습니다
     - 만약 Json데이터로 불러온 데이터의 이름이 아닌 다른 이름으로 하고 싶다면 CodingKey프로토콜 사용
 
-![스크린샷 2024-03-26 오전 4.52.44.png](Weather%20App%2002d6bfa6759d488d930bfbad9bf7b747/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-03-26_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_4.52.44.png)
 
 ---
 
@@ -47,4 +47,8 @@ Struct Model 생성
 
 ---
 
-[https://youtu.be/KNBItDnmNEs](https://youtu.be/KNBItDnmNEs)
+
+
+https://github.com/DeukRyoeng/iOS_Study/assets/164954344/fef927e4-0cff-4ead-8e77-5560035a3499
+
+
