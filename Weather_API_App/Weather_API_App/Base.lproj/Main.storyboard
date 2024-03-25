@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather_API_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seoul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqy-00-wmt">
+                                <rect key="frame" x="126.33333333333333" y="71" width="161.33333333333337" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="clouds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCA-yJ-R2R">
+                                <rect key="frame" x="154.66666666666666" y="142.66666666666666" width="104.66666666666666" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isZ-ec-z0e">
+                                <rect key="frame" x="158.33333333333334" y="183.66666666666666" width="97.333333333333343" height="59.666666666666657"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTO-mY-9T2">
+                                <rect key="frame" x="20" y="20.000000000000004" width="374" height="34.333333333333343"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter a city name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pAC-r0-cye">
+                                        <rect key="frame" x="0.0" y="0.0" width="324.33333333333331" height="34.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhf-uB-d3O">
+                                        <rect key="frame" x="324.33333333333331" y="0.0" width="49.666666666666686" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="tapFetchAPI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ek-uK-kTD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최고: 19°C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMy-3j-QDg">
+                                <rect key="frame" x="10" y="270.33333333333331" width="120" height="29.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="LH3-3d-uAc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="최저: 19°C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgD-5w-kr3">
+                                <rect key="frame" x="291" y="270" width="113" height="29.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="t04-T7-3vD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BTO-mY-9T2" secondAttribute="trailing" constant="20" id="1cy-uy-Bc0"/>
+                            <constraint firstItem="BTO-mY-9T2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9UJ-m7-Nfe"/>
+                            <constraint firstItem="BTO-mY-9T2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cbw-Xt-0og"/>
+                            <constraint firstItem="Eqy-00-wmt" firstAttribute="top" secondItem="BTO-mY-9T2" secondAttribute="bottom" constant="16.670000000000002" id="GUx-MO-YjR"/>
+                            <constraint firstItem="gMy-3j-QDg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Jrq-aK-DIn"/>
+                            <constraint firstItem="gMy-3j-QDg" firstAttribute="top" secondItem="BTO-mY-9T2" secondAttribute="bottom" constant="216" id="M5q-zU-fmV"/>
+                            <constraint firstItem="bCA-yJ-R2R" firstAttribute="top" secondItem="Eqy-00-wmt" secondAttribute="bottom" id="QUv-8u-FCB"/>
+                            <constraint firstItem="IgD-5w-kr3" firstAttribute="top" secondItem="isZ-ec-z0e" secondAttribute="bottom" constant="26.5" id="Qu0-Gt-W3M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IgD-5w-kr3" secondAttribute="trailing" constant="10" id="XRX-gy-XOh"/>
+                            <constraint firstItem="bCA-yJ-R2R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z0N-oo-CCe"/>
+                            <constraint firstItem="isZ-ec-z0e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c64-TP-B0H"/>
+                            <constraint firstItem="Eqy-00-wmt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dI3-6H-cUm"/>
+                            <constraint firstItem="BTO-mY-9T2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gAh-YO-Qv1"/>
+                            <constraint firstItem="isZ-ec-z0e" firstAttribute="top" secondItem="bCA-yJ-R2R" secondAttribute="bottom" id="lVp-KV-w6o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="Eqy-00-wmt" id="BH5-6u-aMs"/>
+                        <outlet property="cityNameTextField" destination="pAC-r0-cye" id="q9C-Ir-LNP"/>
+                        <outlet property="maxTempLabel" destination="gMy-3j-QDg" id="XNy-YF-8qq"/>
+                        <outlet property="minTempLabel" destination="IgD-5w-kr3" id="env-dV-Z9B"/>
+                        <outlet property="tempLabel" destination="isZ-ec-z0e" id="mUD-mQ-LVI"/>
+                        <outlet property="weatherDescriptionLabel" destination="bCA-yJ-R2R" id="YU6-29-rJl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
