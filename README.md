@@ -13,8 +13,7 @@
 5. **Task** 완료 후 **Completion Handler** 클로저 호출
 
 # Current Weather API 활용
-
-[https://openweathermap.org](https://openweathermap.org/)
+![스크린샷 2024-03-26 오전 4 52 44](https://github.com/DeukRyoeng/iOS_Study/assets/164954344/9a8b894e-5dff-406d-9900-6bc61e170de4)
 
 ## 구현
 
