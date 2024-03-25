@@ -29,7 +29,7 @@ PostMan을 활용하여 API 호출 후 그게 알맞은
 
 Struct Model 생성
 
-![https://ibb.co/NFvJM24]
+![postManImg](https://ibb.co/NFvJM24)
 
 # 위치 기반 불러오기
 
